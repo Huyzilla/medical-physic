@@ -1,0 +1,215 @@
+{
+  "common": {
+    "brand": "NucleoHub",
+    "brandTagline": "Trạm Điều Hướng Tương Lai",
+    "studentVersion": "Phiên bản học sinh - sinh viên"
+  },
+  "navbar": {
+    "menu": {
+      "explore": "Khám phá",
+      "wiki": "Wiki Tri thức",
+      "games": "Games",
+      "university": "Định hướng Trường & Học bổng",
+      "community": "Cộng đồng"
+    },
+    "language": {
+      "label": "Ngôn ngữ"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "NucleoHub mở khóa hành trình nghề nghiệp tương lai",
+      "title": "Y học hạt nhân: Khi nguyên tử cứu sống mạng người",
+      "description": "Khám phá nghề nghiệp, tri thức và cơ hội học bổng theo cách trực quan, hiện đại, dành riêng cho học sinh và sinh viên Việt Nam.",
+      "ctaExplore": "Bắt đầu hành trình khám phá",
+      "ctaMentor": "Chat với AI Mentor"
+    },
+    "progress": {
+      "label": "Tiến độ nhiệm vụ khám phá nghề nghiệp",
+      "badge": "Huy hiệu đang mở: Người tiên phong khám phá Y học Hạt nhân"
+    },
+    "matchmaker": {
+      "title": "AI Career Matchmaker (Mockup)",
+      "description": "Bạn thích gì? Chọn sở thích để xem gợi ý nghề nghiệp.",
+      "options": {
+        "code": "Code",
+        "medical": "Y học",
+        "machine": "Máy móc"
+      },
+      "results": {
+        "code": {
+          "title": "Gợi ý: AI Engineer trong Y tế",
+          "detail": "Bạn hợp với hướng phát triển mô hình AI hỗ trợ đọc ảnh PET/SPECT, tối ưu workflow bệnh viện và xây trợ lý chẩn đoán thông minh."
+        },
+        "medical": {
+          "title": "Gợi ý: Bác sĩ Y học Hạt nhân",
+          "detail": "Bạn có thể đi theo lộ trình y khoa, chuyên sâu chẩn đoán và điều trị bằng đồng vị phóng xạ, kết hợp kiến thức lâm sàng và công nghệ."
+        },
+        "machine": {
+          "title": "Gợi ý: Kỹ sư Thiết bị Y học Hạt nhân",
+          "detail": "Bạn phù hợp với thiết kế, vận hành và tối ưu máy PET/CT, SPECT/CT, đồng thời tham gia kiểm chuẩn và an toàn bức xạ."
+        }
+      }
+    },
+    "why": {
+      "title": "Tại sao chọn Y học Hạt nhân?",
+      "cards": {
+        "income": {
+          "title": "Thu nhập cao",
+          "detail": "Nhu cầu nhân lực chất lượng cao đang tăng nhanh tại bệnh viện và doanh nghiệp healthtech."
+        },
+        "social": {
+          "title": "Ý nghĩa xã hội",
+          "detail": "Bạn góp phần phát hiện sớm bệnh và nâng chất lượng điều trị cho hàng nghìn bệnh nhân."
+        },
+        "tech": {
+          "title": "Công nghệ tiên phong",
+          "detail": "Lĩnh vực hội tụ AI, mô phỏng số, Digital Twin và hệ thiết bị chẩn đoán tối tân."
+        }
+      }
+    },
+    "timeline": {
+      "title": "Lộ trình từ HUST đến toàn cầu",
+      "description": "Một ví dụ timeline cho sinh viên muốn đi từ nền tảng kỹ thuật tới môi trường quốc tế.",
+      "milestone": "Mốc {{index}}",
+      "items": [
+        {
+          "stage": "Năm 1-2 tại HUST",
+          "desc": "Xây nền tảng Toán, Vật lý, Lập trình và Tiếng Anh học thuật."
+        },
+        {
+          "stage": "Năm 3-4 chuyên sâu",
+          "desc": "Làm dự án AI y tế, xử lý ảnh, mô phỏng detector, tham gia lab y sinh."
+        },
+        {
+          "stage": "Trao đổi - học bổng",
+          "desc": "Ứng tuyển chương trình Nga/Đức, mở rộng nghiên cứu về Medical Physics."
+        },
+        {
+          "stage": "Sự nghiệp toàn cầu",
+          "desc": "Làm việc ở viện nghiên cứu, bệnh viện công nghệ cao hoặc startup healthtech."
+        }
+      ]
+    }
+  },
+  "game": {
+    "title": "NucleoHub Games",
+    "challengeTitle": "TRẠM THỬ THÁCH HẠT NHÂN",
+    "intro": "Vượt qua 3 câu đố khoa học để mở khóa huy hiệu tập sự theo phong cách game pixel 8-bit.",
+    "start": "BẮT ĐẦU",
+    "exit": "THOÁT",
+    "levelSelect": "CHỌN LEVEL",
+    "level": "LEVEL {{number}}",
+    "levelHint": "Level 2 và 3 đang khóa để giữ trải nghiệm cân bằng.",
+    "locked": "Khóa",
+    "advance": "TIẾN LÊN",
+    "questionLabel": "CÂU {{id}}",
+    "reveal": "Bí mật được bật mí",
+    "wrongReveal": "Rất tiếc, bạn đã nhiễm phóng xạ! GAME OVER",
+    "continue": "TIẾP TỤC",
+    "close": "ĐÓNG",
+    "home": "TRANG CHỦ",
+    "restart": "CHƠI LẠI TỪ ĐẦU",
+    "victory": "VICTORY!",
+    "victoryDesc": "Bạn đã vượt qua đủ 3 chướng ngại vật và chạm cờ đích.",
+    "gameOver": "GAME OVER",
+    "gameOverDesc": "Rất tiếc, bạn đã nhiễm phóng xạ! GAME OVER",
+    "questions": [
+      {
+        "id": 1,
+        "title": "Vụ án Quả chuối phát sáng",
+        "prompt": "Bạn có biết, mỗi khi ăn một quả chuối, cơ thể cũng nhận một lượng phóng xạ tự nhiên rất nhỏ. Nếu ăn 100 quả chuối cùng một lúc thì chuyện gì xảy ra?",
+        "options": [
+          { "key": "A", "text": "Bạn sẽ phát sáng trong bóng tối." },
+          { "key": "B", "text": "Bạn sẽ trở thành siêu anh hùng ngay lập tức." },
+          { "key": "C", "text": "Không có gì đáng sợ xảy ra, vì mức này vẫn rất nhỏ.", "correct": true },
+          { "key": "D", "text": "Bạn sẽ làm hỏng toàn bộ thiết bị điện tử xung quanh." }
+        ],
+        "explain": "Chúc mừng bạn đã không bị đánh lừa! Phóng xạ tự nhiên có ở khắp nơi. Y học hạt nhân dùng một lượng cực nhỏ thuốc thám tử, đủ để máy đọc tín hiệu chứ không phải để gây nguy hiểm như trong phim."
+      },
+      {
+        "id": 2,
+        "title": "Chiếc Kính thần của Bác sĩ",
+        "prompt": "Trong phòng chụp Y học hạt nhân (SPECT/PET), chiếc máy chụp đóng vai trò gì?",
+        "options": [
+          { "key": "A", "text": "Phát tia mạnh vào cơ thể để đốt tế bào lỗi ngay tại chỗ." },
+          { "key": "B", "text": "Chụp hình xương giống hệt X-quang thông thường." },
+          { "key": "C", "text": "Ghi lại tín hiệu phát ra từ thuốc thám tử bên trong cơ thể.", "correct": true },
+          { "key": "D", "text": "Đo nhiệt độ da để dự đoán bệnh." }
+        ],
+        "explain": "Bất ngờ chưa! Khác với X-quang, nguồn sáng ở đây nằm ngay bên trong bạn. Máy PET/SPECT giống chiếc kính thần giúp bác sĩ nhìn được hoạt động chức năng của mô và cơ quan."
+      },
+      {
+        "id": 3,
+        "title": "Siêu năng lực Tạm thời",
+        "prompt": "Sau khi được tiêm thuốc thám tử trong chẩn đoán Y học hạt nhân, siêu năng lực nào cơ thể bạn sẽ sở hữu tạm thời?",
+        "options": [
+          { "key": "A", "text": "Đọc được suy nghĩ của người khác." },
+          { "key": "B", "text": "Phát ra tín hiệu rất nhỏ để máy ghi nhận và tạo ảnh chức năng.", "correct": true },
+          { "key": "C", "text": "Biến cơ thể thành nam châm hút kim loại." },
+          { "key": "D", "text": "Miễn nhiễm hoàn toàn với mọi bệnh." }
+        ],
+        "explain": "Chính xác! Bạn tạm thời trở thành một ngọn hải đăng tí hon phát tín hiệu cho máy ghi nhận. Nhờ đó, bác sĩ có dữ liệu để đánh giá hoạt động sống bên trong cơ thể."
+      }
+    ]
+  },
+  "wiki": {
+    "title": "Wiki Tri thức",
+    "description": "Thư viện kiến thức nền tảng về đồng vị, kỹ thuật chẩn đoán và ứng dụng lâm sàng.",
+    "items": [
+      {
+        "isotope": "F-18",
+        "useCase": "PET/CT trong chẩn đoán ung thư và thần kinh",
+        "note": "Được dùng nhiều trong FDG-PET để quan sát chuyển hóa glucose."
+      },
+      {
+        "isotope": "Tc-99m",
+        "useCase": "SPECT cho tim mạch, xương, thận",
+        "note": "Là đồng vị phổ biến nhờ đặc tính phù hợp cho chẩn đoán."
+      },
+      {
+        "isotope": "I-131",
+        "useCase": "Điều trị bệnh tuyến giáp",
+        "note": "Vừa hỗ trợ chẩn đoán, vừa có vai trò điều trị mục tiêu."
+      }
+    ]
+  },
+  "career": {
+    "title": "Cộng đồng & Định hướng nghề",
+    "description": "Không gian chia sẻ trải nghiệm học tập, roadmap kỹ năng và cơ hội thực tập."
+  },
+  "university": {
+    "title": "Định hướng Trường & Học bổng",
+    "description": "Danh sách mẫu để bạn phát triển thành module tư vấn trường phù hợp.",
+    "country": "Quốc gia",
+    "focus": "Thế mạnh",
+    "scholarship": "Gợi ý học bổng",
+    "items": [
+      {
+        "id": "hust",
+        "name": "Đại học Bách khoa Hà Nội (HUST)",
+        "country": "Việt Nam",
+        "focus": "Kỹ thuật y sinh, điện tử y tế, AI ứng dụng trong y khoa",
+        "scholarshipHint": "Học bổng khuyến khích học tập và quỹ nghiên cứu sinh viên."
+      },
+      {
+        "id": "tum",
+        "name": "Technical University of Munich (TUM)",
+        "country": "Đức",
+        "focus": "Medical Physics, Imaging Science, dữ liệu y tế",
+        "scholarshipHint": "DAAD và nhiều quỹ hợp tác nghiên cứu quốc tế."
+      },
+      {
+        "id": "mephi",
+        "name": "NRNU MEPhI",
+        "country": "Nga",
+        "focus": "Nuclear Engineering, Radiochemistry, Detector Physics",
+        "scholarshipHint": "Học bổng chính phủ và các chương trình liên kết song phương."
+      }
+    ]
+  },
+  "footer": {
+    "title": "NucleoHub: Trạm Điều Hướng Tương Lai",
+    "description": "Nền tảng hướng nghiệp và giáo dục chuyên sâu về Y học Hạt nhân cho học sinh, sinh viên Việt Nam."
+  }
+}

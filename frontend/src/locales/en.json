@@ -1,0 +1,215 @@
+{
+  "common": {
+    "brand": "NucleoHub",
+    "brandTagline": "Future Navigation Station",
+    "studentVersion": "Student Edition"
+  },
+  "navbar": {
+    "menu": {
+      "explore": "Explore",
+      "wiki": "Knowledge Wiki",
+      "games": "Games",
+      "university": "University & Scholarship Guidance",
+      "community": "Community"
+    },
+    "language": {
+      "label": "Language"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "NucleoHub unlocks your future career journey",
+      "title": "Nuclear medicine: When atoms help save lives",
+      "description": "Explore careers, knowledge, and scholarship opportunities through a modern visual experience designed for Vietnamese students.",
+      "ctaExplore": "Start your exploration",
+      "ctaMentor": "Chat with AI Mentor"
+    },
+    "progress": {
+      "label": "Career exploration mission progress",
+      "badge": "Current badge: Nuclear Medicine Pioneer"
+    },
+    "matchmaker": {
+      "title": "AI Career Matchmaker (Mockup)",
+      "description": "What do you enjoy? Pick your interest to see a career suggestion.",
+      "options": {
+        "code": "Coding",
+        "medical": "Medicine",
+        "machine": "Machines"
+      },
+      "results": {
+        "code": {
+          "title": "Suggested: AI Engineer in Healthcare",
+          "detail": "You are a strong fit for building AI models for PET/SPECT image reading, optimizing hospital workflows, and creating clinical decision assistants."
+        },
+        "medical": {
+          "title": "Suggested: Nuclear Medicine Physician",
+          "detail": "You can follow a medical pathway focused on radionuclide-based diagnosis and therapy, combining clinical practice with advanced technology."
+        },
+        "machine": {
+          "title": "Suggested: Nuclear Medical Equipment Engineer",
+          "detail": "You may thrive in designing and operating PET/CT and SPECT/CT systems, as well as quality assurance and radiation safety."
+        }
+      }
+    },
+    "why": {
+      "title": "Why choose Nuclear Medicine?",
+      "cards": {
+        "income": {
+          "title": "High income potential",
+          "detail": "Demand for highly skilled talent is rising in hospitals and healthtech companies."
+        },
+        "social": {
+          "title": "Social impact",
+          "detail": "You help detect diseases earlier and improve treatment outcomes for many patients."
+        },
+        "tech": {
+          "title": "Cutting-edge technology",
+          "detail": "This field combines AI, digital simulation, Digital Twin models, and advanced imaging systems."
+        }
+      }
+    },
+    "timeline": {
+      "title": "Roadmap from HUST to the world",
+      "description": "A sample path for students going from technical foundations to international opportunities.",
+      "milestone": "Milestone {{index}}",
+      "items": [
+        {
+          "stage": "Year 1-2 at HUST",
+          "desc": "Build a strong base in Math, Physics, Programming, and academic English."
+        },
+        {
+          "stage": "Year 3-4 specialization",
+          "desc": "Work on AI healthcare projects, medical imaging pipelines, detector simulation, and lab practice."
+        },
+        {
+          "stage": "Exchange and scholarships",
+          "desc": "Apply to programs in Germany/Russia and broaden your research in Medical Physics."
+        },
+        {
+          "stage": "Global career",
+          "desc": "Work in research institutes, high-tech hospitals, or healthtech startups."
+        }
+      ]
+    }
+  },
+  "game": {
+    "title": "NucleoHub Games",
+    "challengeTitle": "NUCLEAR CHALLENGE STATION",
+    "intro": "Clear 3 science puzzles to unlock your trainee badge in an 8-bit pixel game vibe.",
+    "start": "START",
+    "exit": "EXIT",
+    "levelSelect": "SELECT LEVEL",
+    "level": "LEVEL {{number}}",
+    "levelHint": "Level 2 and 3 are temporarily locked for balanced progression.",
+    "locked": "Locked",
+    "advance": "MOVE FORWARD",
+    "questionLabel": "QUESTION {{id}}",
+    "reveal": "Secret Unlocked",
+    "wrongReveal": "Too bad, radiation got you! GAME OVER",
+    "continue": "CONTINUE",
+    "close": "CLOSE",
+    "home": "HOME",
+    "restart": "RESTART FROM BEGINNING",
+    "victory": "VICTORY!",
+    "victoryDesc": "You cleared all 3 obstacles and reached the finish flag.",
+    "gameOver": "GAME OVER",
+    "gameOverDesc": "Too bad, radiation got you! GAME OVER",
+    "questions": [
+      {
+        "id": 1,
+        "title": "The Glowing Banana Case",
+        "prompt": "Did you know that eating a banana gives your body a tiny amount of natural radiation? What happens if you eat 100 bananas at once?",
+        "options": [
+          { "key": "A", "text": "You will glow in the dark." },
+          { "key": "B", "text": "You instantly become a superhero." },
+          { "key": "C", "text": "Nothing scary; the exposure is still very small.", "correct": true },
+          { "key": "D", "text": "You will break all electronic devices nearby." }
+        ],
+        "explain": "Great choice. Natural radiation exists around us all the time. In nuclear medicine, tracer doses are carefully controlled: enough for imaging signals, not for dramatic movie effects."
+      },
+      {
+        "id": 2,
+        "title": "The Doctor’s Magic Lens",
+        "prompt": "In a nuclear medicine room (SPECT/PET), what is the scanner’s main role?",
+        "options": [
+          { "key": "A", "text": "It blasts strong rays into the body to burn unhealthy cells immediately." },
+          { "key": "B", "text": "It captures bones exactly like a regular X-ray." },
+          { "key": "C", "text": "It records signals emitted from the tracer inside the body.", "correct": true },
+          { "key": "D", "text": "It measures skin temperature to predict disease." }
+        ],
+        "explain": "Surprise. Unlike X-ray imaging, the signal source here is inside the body. PET/SPECT acts like a functional lens, revealing how tissues and organs are working."
+      },
+      {
+        "id": 3,
+        "title": "Temporary Superpower",
+        "prompt": "After receiving a tracer injection for nuclear medicine imaging, which temporary superpower does your body gain?",
+        "options": [
+          { "key": "A", "text": "Reading other people’s thoughts." },
+          { "key": "B", "text": "Emitting tiny signals that scanners can detect to build functional images.", "correct": true },
+          { "key": "C", "text": "Turning your body into a metal magnet." },
+          { "key": "D", "text": "Becoming completely immune to all diseases." }
+        ],
+        "explain": "Exactly. For a short time, your body becomes a tiny lighthouse emitting measurable signals. That data helps clinicians evaluate internal biological activity."
+      }
+    ]
+  },
+  "wiki": {
+    "title": "Knowledge Wiki",
+    "description": "A foundational library on isotopes, diagnostic techniques, and clinical applications.",
+    "items": [
+      {
+        "isotope": "F-18",
+        "useCase": "PET/CT for oncology and neurology diagnostics",
+        "note": "Widely used in FDG-PET to observe glucose metabolism."
+      },
+      {
+        "isotope": "Tc-99m",
+        "useCase": "SPECT for cardiology, bone, and renal imaging",
+        "note": "A common isotope due to its favorable diagnostic properties."
+      },
+      {
+        "isotope": "I-131",
+        "useCase": "Thyroid disease treatment",
+        "note": "Supports both diagnosis and targeted radionuclide therapy."
+      }
+    ]
+  },
+  "career": {
+    "title": "Community & Career Guidance",
+    "description": "A space to share learning experiences, skill roadmaps, and internship opportunities."
+  },
+  "university": {
+    "title": "University & Scholarship Guidance",
+    "description": "A sample list you can grow into a personalized university recommendation module.",
+    "country": "Country",
+    "focus": "Strength",
+    "scholarship": "Scholarship hint",
+    "items": [
+      {
+        "id": "hust",
+        "name": "Hanoi University of Science and Technology (HUST)",
+        "country": "Vietnam",
+        "focus": "Biomedical engineering, medical electronics, and AI in healthcare",
+        "scholarshipHint": "Merit scholarships and student research funds."
+      },
+      {
+        "id": "tum",
+        "name": "Technical University of Munich (TUM)",
+        "country": "Germany",
+        "focus": "Medical Physics, Imaging Science, and health data",
+        "scholarshipHint": "DAAD and multiple international research funding tracks."
+      },
+      {
+        "id": "mephi",
+        "name": "NRNU MEPhI",
+        "country": "Russia",
+        "focus": "Nuclear Engineering, Radiochemistry, and Detector Physics",
+        "scholarshipHint": "Government scholarships and bilateral partnership programs."
+      }
+    ]
+  },
+  "footer": {
+    "title": "NucleoHub: Future Navigation Station",
+    "description": "A career guidance and deep-learning platform on Nuclear Medicine for high school and university students in Vietnam."
+  }
+}

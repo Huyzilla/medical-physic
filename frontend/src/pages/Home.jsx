@@ -9,84 +9,57 @@ import {
   ShieldCheck,
   Sparkles,
 } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import Button from '../components/Button'
 import Card from '../components/Card'
 
-const matchOptions = ['Code', 'Y học', 'Máy móc']
-
-const careerMap = {
-  Code: {
-    title: 'Gợi ý: AI Engineer trong Y tế',
-    detail:
-      'Bạn hợp với hướng phát triển mô hình AI hỗ trợ đọc ảnh PET/SPECT, tối ưu workflow bệnh viện và xây trợ lý chẩn đoán thông minh.',
-  },
-  'Y học': {
-    title: 'Gợi ý: Bác sĩ Y học Hạt nhân',
-    detail:
-      'Bạn có thể đi theo lộ trình y khoa, chuyên sâu chẩn đoán và điều trị bằng đồng vị phóng xạ, kết hợp kiến thức lâm sàng và công nghệ.',
-  },
-  'Máy móc': {
-    title: 'Gợi ý: Kỹ sư Thiết bị Y học Hạt nhân',
-    detail:
-      'Bạn phù hợp với thiết kế, vận hành và tối ưu máy PET/CT, SPECT/CT, đồng thời tham gia kiểm chuẩn và an toàn bức xạ.',
-  },
-}
-
-const timeline = [
-  {
-    stage: 'Năm 1-2 tại HUST',
-    desc: 'Xây nền tảng Toán, Vật lý, Lập trình và Tiếng Anh học thuật.',
-  },
-  {
-    stage: 'Năm 3-4 chuyên sâu',
-    desc: 'Làm dự án AI y tế, xử lý ảnh, mô phỏng detector, tham gia lab y sinh.',
-  },
-  {
-    stage: 'Trao đổi - học bổng',
-    desc: 'Ứng tuyển chương trình Nga/Đức, mở rộng nghiên cứu về Medical Physics.',
-  },
-  {
-    stage: 'Sự nghiệp toàn cầu',
-    desc: 'Làm việc ở viện nghiên cứu, bệnh viện công nghệ cao hoặc startup healthtech.',
-  },
-]
-
 export default function Home() {
-  const [interest, setInterest] = useState('Code')
+  const { t } = useTranslation()
+  const [interest, setInterest] = useState('code')
   const [progress] = useState(32)
 
-  const careerResult = useMemo(() => careerMap[interest], [interest])
+  const matchOptions = ['code', 'medical', 'machine']
+
+  const careerResult = useMemo(
+    () => ({
+      title: t(`home.matchmaker.results.${interest}.title`),
+      detail: t(`home.matchmaker.results.${interest}.detail`),
+    }),
+    [interest, t],
+  )
+
+  const timeline = t('home.timeline.items', { returnObjects: true })
 
   return (
     <div className="space-y-8 pb-8">
       <section className="rounded-3xl border border-slate-700/60 bg-gradient-to-br from-slate-950 via-sky-950 to-teal-950 p-7 md:p-10">
         <div className="flex flex-wrap items-center gap-2 text-sm text-teal-200">
           <Sparkles size={16} />
-          NucleoHub mở khóa hành trình nghề nghiệp tương lai
+          {t('home.hero.badge')}
         </div>
 
         <h1 className="mt-4 max-w-4xl text-3xl font-extrabold leading-tight text-white md:text-5xl">
-          Y học hạt nhân: Khi nguyên tử cứu sống mạng người
+          {t('home.hero.title')}
         </h1>
 
         <p className="mt-4 max-w-3xl text-slate-200 md:text-lg">
-          Khám phá nghề nghiệp, tri thức và cơ hội học bổng theo cách trực quan, hiện đại, dành riêng cho học sinh và sinh viên Việt Nam.
+          {t('home.hero.description')}
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
           <Button>
-            Bắt đầu hành trình khám phá
+            {t('home.hero.ctaExplore')}
             <Rocket className="ml-2" size={16} />
           </Button>
           <Button variant="ghost">
-            Chat với AI Mentor
+            {t('home.hero.ctaMentor')}
             <Bot className="ml-2" size={16} />
           </Button>
         </div>
 
         <div className="mt-8 rounded-2xl border border-teal-400/30 bg-slate-900/50 p-4">
           <div className="mb-2 flex items-center justify-between text-sm text-slate-200">
-            <span>Tiến độ nhiệm vụ khám phá nghề nghiệp</span>
+            <span>{t('home.progress.label')}</span>
             <span className="font-semibold text-teal-300">{progress}%</span>
           </div>
           <div className="h-3 overflow-hidden rounded-full bg-slate-800">
@@ -94,15 +67,15 @@ export default function Home() {
           </div>
           <p className="mt-2 flex items-center gap-2 text-xs text-slate-300">
             <Medal size={14} className="text-amber-300" />
-            Huy hiệu đang mở: Người tiên phong khám phá Y học Hạt nhân
+            {t('home.progress.badge')}
           </p>
         </div>
       </section>
 
       <section className="grid gap-4 lg:grid-cols-2">
         <Card className="border-teal-500/30">
-          <h2 className="text-xl font-bold text-white">AI Career Matchmaker (Mockup)</h2>
-          <p className="mt-2 text-sm text-slate-300">Bạn thích gì? Chọn sở thích để xem gợi ý nghề nghiệp.</p>
+          <h2 className="text-xl font-bold text-white">{t('home.matchmaker.title')}</h2>
+          <p className="mt-2 text-sm text-slate-300">{t('home.matchmaker.description')}</p>
 
           <div className="mt-4 flex flex-wrap gap-2">
             {matchOptions.map((option) => (
@@ -116,7 +89,7 @@ export default function Home() {
                     : 'border-slate-600 bg-slate-900/40 text-slate-300 hover:border-teal-400'
                 }`}
               >
-                {option}
+                {t(`home.matchmaker.options.${option}`)}
               </button>
             ))}
           </div>
@@ -128,25 +101,25 @@ export default function Home() {
         </Card>
 
         <Card>
-          <h2 className="text-xl font-bold text-white">Tại sao chọn Y học Hạt nhân?</h2>
+          <h2 className="text-xl font-bold text-white">{t('home.why.title')}</h2>
           <div className="mt-4 grid gap-3">
             <div className="rounded-xl border border-slate-700 bg-slate-900/70 p-4">
               <p className="flex items-center gap-2 font-semibold text-emerald-300">
-                <Coins size={16} /> Thu nhập cao
+                <Coins size={16} /> {t('home.why.cards.income.title')}
               </p>
-              <p className="mt-1 text-sm text-slate-300">Nhu cầu nhân lực chất lượng cao đang tăng nhanh tại bệnh viện và doanh nghiệp healthtech.</p>
+              <p className="mt-1 text-sm text-slate-300">{t('home.why.cards.income.detail')}</p>
             </div>
             <div className="rounded-xl border border-slate-700 bg-slate-900/70 p-4">
               <p className="flex items-center gap-2 font-semibold text-sky-300">
-                <ShieldCheck size={16} /> Ý nghĩa xã hội
+                <ShieldCheck size={16} /> {t('home.why.cards.social.title')}
               </p>
-              <p className="mt-1 text-sm text-slate-300">Bạn góp phần phát hiện sớm bệnh và nâng chất lượng điều trị cho hàng nghìn bệnh nhân.</p>
+              <p className="mt-1 text-sm text-slate-300">{t('home.why.cards.social.detail')}</p>
             </div>
             <div className="rounded-xl border border-slate-700 bg-slate-900/70 p-4">
               <p className="flex items-center gap-2 font-semibold text-teal-300">
-                <Cpu size={16} /> Công nghệ tiên phong
+                <Cpu size={16} /> {t('home.why.cards.tech.title')}
               </p>
-              <p className="mt-1 text-sm text-slate-300">Lĩnh vực hội tụ AI, mô phỏng số, Digital Twin và hệ thiết bị chẩn đoán tối tân.</p>
+              <p className="mt-1 text-sm text-slate-300">{t('home.why.cards.tech.detail')}</p>
             </div>
           </div>
         </Card>
@@ -154,14 +127,14 @@ export default function Home() {
 
       <section>
         <Card className="border-sky-500/30">
-          <h2 className="text-xl font-bold text-white">Lộ trình từ HUST đến toàn cầu</h2>
-          <p className="mt-2 text-sm text-slate-300">Một ví dụ timeline cho sinh viên muốn đi từ nền tảng kỹ thuật tới môi trường quốc tế.</p>
+          <h2 className="text-xl font-bold text-white">{t('home.timeline.title')}</h2>
+          <p className="mt-2 text-sm text-slate-300">{t('home.timeline.description')}</p>
 
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {timeline.map((step, index) => (
               <div key={step.stage} className="relative rounded-xl border border-slate-700 bg-slate-900/70 p-4">
                 <p className="inline-flex items-center gap-2 rounded-full border border-teal-400/40 bg-teal-400/10 px-2 py-1 text-xs font-semibold text-teal-200">
-                  <BrainCircuit size={13} /> Mốc {index + 1}
+                  <BrainCircuit size={13} /> {t('home.timeline.milestone', { index: index + 1 })}
                 </p>
                 <p className="mt-3 font-semibold text-white">{step.stage}</p>
                 <p className="mt-2 text-sm text-slate-300">{step.desc}</p>

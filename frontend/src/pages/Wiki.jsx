@@ -1,13 +1,16 @@
 import { Atom } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import Card from '../components/Card'
-import { isotopeList } from '../data/isotopeList'
 
 export default function Wiki() {
+  const { t } = useTranslation()
+  const isotopeList = t('wiki.items', { returnObjects: true })
+
   return (
     <section className="py-8">
       <Card>
-        <h1 className="text-2xl font-bold text-white">Wiki Tri thức</h1>
-        <p className="mt-2 text-slate-300">Thư viện kiến thức nền tảng về đồng vị, kỹ thuật chẩn đoán và ứng dụng lâm sàng.</p>
+        <h1 className="text-2xl font-bold text-white">{t('wiki.title')}</h1>
+        <p className="mt-2 text-slate-300">{t('wiki.description')}</p>
 
         <div className="mt-5 grid gap-3">
           {isotopeList.map((item) => (
