@@ -1,16 +1,16 @@
-# React + Vite
+# NucleoHub Workspace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mã nguồn ứng dụng React + Vite đã được gom vào thư mục frontend.
 
-Currently, two official plugins are available:
+## Cấu trúc
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- frontend: ứng dụng chính (React, Tailwind CSS, Lucide).
+- package.json (root): script chuyển tiếp sang frontend để chạy nhanh từ thư mục gốc.
 
-## React Compiler
+## Chạy dự án
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Chạy dev từ root: npm run dev
+- Build từ root: npm run build
+- Hoặc chạy trực tiếp trong frontend:
+	- cd frontend
+	- npm run dev
