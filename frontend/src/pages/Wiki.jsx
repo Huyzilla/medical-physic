@@ -1,5 +1,6 @@
 import { ExternalLink, FileText, ImageOff } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Card from '../components/Card'
 import { fetchWikiArticles } from '../lib/wikiArticles'
 
@@ -69,9 +70,13 @@ function ArticleImage({ src, title }) {
 }
 
 export default function Wiki() {
+  const { i18n } = useTranslation()
   const [articles, setArticles] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [errorMessage, setErrorMessage] = useState('')
+  const isVietnamese = i18n.language === 'vi'
+  const loadingLabel = isVietnamese ? 'Đang tải dữ liệu học thuât...' : 'Loading scholarly data...'
+  const externalArticleLabel = isVietnamese ? 'Đọc bài báo ngoài' : 'Read external article'
 
   useEffect(() => {
     let isMounted = true
@@ -143,7 +148,7 @@ export default function Wiki() {
       <Card>
         {isLoading ? (
           <div className="mt-6 rounded-xl border border-slate-700 bg-slate-900/60 p-4 text-slate-300">
-            Dang tai du lieu wiki...
+            {loadingLabel}
           </div>
         ) : null}
 
@@ -181,7 +186,7 @@ export default function Wiki() {
                   >
                     {hasExternalLink ? (
                       <>
-                        <ExternalLink size={15} /> Mo bai bao ngoai
+                        <ExternalLink size={15} /> {externalArticleLabel}
                       </>
                     ) : hasContent ? (
                       <>
