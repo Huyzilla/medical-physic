@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react'
 import {
-  Bot,
   Cpu,
   Medal,
   Rocket,
@@ -49,28 +48,15 @@ export default function Home() {
     <div className="space-y-8 pb-8">
       <section className="relative overflow-hidden rounded-3xl border border-slate-700/60 bg-gradient-to-br from-slate-950 via-sky-950 to-teal-950 p-7 md:p-10 md:pr-72 lg:pr-80">
         <div className="relative z-10">
-          <div className="flex flex-wrap items-center gap-2 text-sm text-teal-200">
-            <Sparkles size={16} />
-            {t('home.hero.badge')}
-          </div>
-
           <h1 className="mt-4 flex max-w-4xl items-center gap-3 text-3xl font-extrabold leading-tight text-white md:text-5xl">
             <img src={atomIcon} alt="Atom icon" className="h-8 w-8 shrink-0 rounded-md object-contain md:h-10 md:w-10" />
             <span>{t('home.hero.title')}</span>
           </h1>
 
-          <p className="mt-4 max-w-3xl text-slate-200 md:text-lg">
-            {t('home.hero.description')}
-          </p>
-
           <div className="mt-6 flex flex-wrap gap-3">
             <Button onClick={() => setShowJourney(true)}>
               {t('home.hero.ctaExplore')}
               <Rocket className="ml-2" size={16} />
-            </Button>
-            <Button variant="ghost">
-              {t('home.hero.ctaMentor')}
-              <Bot className="ml-2" size={16} />
             </Button>
           </div>
 
